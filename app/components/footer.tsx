@@ -9,13 +9,14 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
+import { HiDownload } from 'react-icons/hi';
 import { metaData, socialLinks } from "app/config";
 
 const YEAR = new Date().getFullYear();
 
-function SocialLink({ href, icon: Icon }) {
+function SocialLink({ href, icon: Icon,download }) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a href={href} target="_blank" rel="noopener noreferrer" download={download}>
       <Icon />
     </a>
   );
@@ -25,10 +26,16 @@ function SocialLinks() {
   return (
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
 
-      <SocialLink href={socialLinks.github} icon={FaGithub} />
+      <SocialLink href={socialLinks.github} icon={FaGithub} download={false} />
 
-      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
-      <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} download={false}/>
+      <SocialLink href={socialLinks.email} icon={TbMailFilled} download={false}/>
+      <SocialLink 
+  href="/Hariharan_resume.pdf" 
+  icon={HiDownload}
+  download
+  aria-label="Download Resume"
+/>
     </div>
   );
 }
