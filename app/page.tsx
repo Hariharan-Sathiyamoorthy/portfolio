@@ -20,7 +20,7 @@ className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:
     />
   </a>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-          Software Engineer - Full Stack
+          Software Engineer
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         

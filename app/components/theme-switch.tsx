@@ -23,7 +23,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
 export const ThemeSwitch: React.FC = () => {
   const { setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
-  const [currentTheme, setCurrentTheme] = React.useState<'light' | 'dark'>('light');
+  const [currentTheme, setCurrentTheme] = React.useState<'light' | 'dark'>('dark');
 
   const getColorPreference = (): 'light' | 'dark' => {
     if (typeof window !== 'undefined') {
@@ -33,7 +33,7 @@ export const ThemeSwitch: React.FC = () => {
       }
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
-    return 'light'; 
+    return 'dark'; 
   };
 
   const reflectPreference = (theme: 'light' | 'dark') => {
