@@ -11,6 +11,6 @@ export const socialLinks = {
 
   github: "https://github.com/Hariharan-Sathiyamoorthy",
 
-  linkedin: "https://www.linkedin.com/in/hariharan-s-254098205/",
+  linkedin: "www.linkedin.com/in/hariharan-sathiyamoorthy-254098205",
   email: "mailto:hari73118@gmail.com",
 };
