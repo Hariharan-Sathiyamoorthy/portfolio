@@ -31,7 +31,7 @@ function SocialLinks() {
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} download={false}/>
       <SocialLink href={socialLinks.email} icon={TbMailFilled} download={false}/>
       <SocialLink 
-  href="/Hariharan_resume.pdf" 
+  href="/resume.pdf" 
   icon={HiDownload}
   download
   aria-label="Download Resume"
